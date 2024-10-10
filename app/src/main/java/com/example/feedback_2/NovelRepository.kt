@@ -17,12 +17,10 @@ class NovelRepository(application: Application) {
         executorService = Executors.newFixedThreadPool(2)
     }
 
-    fun insert(novel: Novel) {
-        executorService.execute { novelDao.insert(novel) }
-    }
-
-    fun delete(novel: Novel) {
-        executorService.execute { novelDao.delete(novel) }
+    companion object {
+        fun getAllNovels(): Any {
+            return NovelDao.getAllNovels()
+        }
     }
 }
 
