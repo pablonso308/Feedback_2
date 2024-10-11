@@ -31,9 +31,9 @@ class NovelAdapter(
 
             // Marcar como favorito
             if (novel.isFavorite) {
-                favoriteImageView.setImageResource(R.drawable.ic_launcher_foreground) // Icono de novela favorita
+                favoriteImageView.setImageResource(R.drawable.ic_star_filled) // Icono de novela favorita
             } else {
-                favoriteImageView.setImageResource(R.drawable.ic_launcher_foreground) // Icono de no favorita
+                favoriteImageView.setImageResource(R.drawable.ic_star_outline) // Icono de no favorita
             }
 
             // Evento de clic para mostrar detalles de la novela

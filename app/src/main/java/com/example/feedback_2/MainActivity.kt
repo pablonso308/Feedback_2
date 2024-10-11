@@ -88,3 +88,8 @@ class MainActivity : AppCompatActivity() {
         unregisterReceiver(syncReceiver)
     }
 }
+
+private fun Any.observe(mainActivity: MainActivity, observer: Observer<List<Novel>>) {
+    //To change body of created functions use File | Settings | File Templates.
+
+}
