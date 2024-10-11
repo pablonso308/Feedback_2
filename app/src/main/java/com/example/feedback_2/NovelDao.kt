@@ -10,6 +10,7 @@ interface NovelDao {
 
     @Query("SELECT * FROM novel_table ORDER BY title ASC")
     fun getAllNovels(): LiveData<List<Novel>>
+    abstract fun insert(novel: Novel)
 
     companion object {
         fun getAllNovels() {

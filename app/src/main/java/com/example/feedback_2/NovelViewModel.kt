@@ -22,5 +22,10 @@ class NovelViewModel(application: Application) : AndroidViewModel(application) {
 
 
     }
+
+    fun insert(novel: Novel) {
+        repository.insert(novel)
+
+    }
 }
 

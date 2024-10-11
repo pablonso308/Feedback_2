@@ -22,6 +22,12 @@ class NovelRepository(application: Application) {
             return NovelDao.getAllNovels()
         }
     }
+
+    fun insert(novel: Novel) {
+        executorService.execute {
+            novelDao.insert(novel)
+        }
+    }
 }
 
 
